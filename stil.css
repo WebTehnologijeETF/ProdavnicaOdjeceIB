@@ -2,17 +2,14 @@
 @import url(http://fonts.googleapis.com/css?family=Gabriela);
 
 *{
-	font-family: verdana;
-	/*padding: 0cm;*/
+	font-family: verdana
 }
 #GlavniDio{
 	background-color:#001A33 ;
 	margin-left: 1.2cm;
 	color: white;
 	margin-right: 1.2cm;
-	/*padding: 0cm;*/
 	margin-top: -0.42cm;
-	padding-top: -0.2cm;
 }
 #Traka{
 	background: white;
@@ -20,8 +17,6 @@
 	margin-left: 1.2cm;
 	margin-right: 1.2cm;
 	color: #001A33;;
-	padding-bottom: -0.2cm;
-	padding-top: -0.4cm;
 }
 
 ul{
@@ -34,27 +29,20 @@ ul{
          display:inline;
 }
 #Inicijali{
-	font-size: 28;
+	font-size: 28px;
 	padding-right: 5.8cm;
 	padding-left: 0cm;
 	margin-right: 1cm;
 	margin-top: -0.2cm;
-
-	/*margin-top: 1cm;*/
-	/*padding-bottom: 0.2cm;*/
-	
 
 }
 .Zajednicko{
 	padding-top: 0.25cm;
 	padding-right: 1.3cm;
 	padding-left: 1.3cm;
-	
-	/*padding-bottom: 0.05cm;*/
-
 }
 #Zene{
-	/*background: #990033;*/
+	
 	color: white;
 	border-width: 0.08cm;
 	border-right-color: #001A33;
@@ -66,7 +54,7 @@ ul{
 }
 
 #Muskarci{
-	/*background-color: #006666;*/
+	
 	border-width: 0.08cm;
 	border-right-color: #001A33;
 	border-left-color: white;
@@ -78,7 +66,7 @@ ul{
 }
 
 #Kontakt{
-	/*background-color: #8750A3;*/
+	
 	border-width: 0.08cm;
 	border-right-color: #001A33;
 	border-left-color: white;
@@ -87,14 +75,8 @@ ul{
 	border-style: solid;
 }
 
-#Dobavljaci
-{
-	/*background-color: #33CC99;*/
-
-}
-
 #Informacije{
-	/*background-color: #ff9999;*/
+	
 	border-width: 0.08cm;
 	border-right-color: #001A33;
 	border-left-color: #001A33;
@@ -102,42 +84,46 @@ ul{
 	border-bottom-color: white;
 	border-style: solid;
 }
+
 #Novosti{
+
 	width: 340px;
 	height: 600px;
 	overflow: scroll;
-	font-size: 12;
+	font-size: 12px;
 	padding: 0.2cm;
 }
 .TekstNovosti{
+
 	text-align: justify;
 }
 .LinkNovosti{
+
 	text-align: right;
-	font-size: 11;
+	font-size: 11px;
 }
 
 .datum{
 	text-align: left;
-	font-size: 10
+	font-size: 10px;
 }
 .autor1
 {
 	text-align: left;
-	font-size: 10;
+	font-size: 10px;
 }
 .NaslovNovosti
 {
-	text-decoration: bold;
-	text-transform: bold;
 	text-align: center;
-	font-size: 13;
+	font-size: 13px;
 }
-.OkvirNovosti{
+.OkvirNovosti
+{
 border:0.05cm;
 border-style: dashed;
 padding: 0.2cm;
 }
+
 p.LinkNovosti a:link{
 	color:white;;
 	text-decoration: none;
@@ -154,7 +140,7 @@ li.Zajednicko a:link
 #NaslovONamaDijela
 {
 	text-align: center;
-	font-size: 16;
+	font-size: 16px;
 	padding-bottom: 0.5cm;
 	padding-top: 1.3cm;
 }
@@ -162,7 +148,7 @@ li.Zajednicko a:link
 {
 	width: 740px;
 	height: 550px;
-	font-size: 13;
+	font-size: 13px;
 	font-family: verdana;
 	margin-left: 12.1cm;
 	margin-top: -16cm;
@@ -182,19 +168,17 @@ img.Zastave
 #SlikeONamaDijela
 {
 	text-align: right;
-	font-size: 14;
+	font-size: 14px;
 }
 #GlavniDioDobavljaci{
 	background-color:#001A33 ;
 	margin-left: 15.8cm;
 	color: white;
 	margin-right: 1.2cm;
-	/*padding: 0cm;*/
 	margin-top: -0.42cm;
-	padding-top: -0.8cm;
 	padding: 0.2cm;
 	padding-right: 1cm;
-	font-size: 14.5;
+	font-size: 14.5px;
 	height: 594px;
 	margin-top: -16.6cm;
 	
@@ -221,9 +205,7 @@ p.SlikaPartnera
 	margin-left: 1.2cm;
 	color: white;
 	margin-right: 1.2cm;
-	/*padding: 0cm;*/
 	margin-top: -0.42cm;
-	padding-top: -0.2cm;
 	height: 606px;
 }
 img.Cikci
@@ -241,10 +223,9 @@ p.NovostiSlika
 	margin-left: 1.2cm;
 	color: white;
 	margin-right: 1.2cm;
-	/*padding: 0cm;*/
 	margin-top: -0.42cm;
 	padding-top: 2cm;
-	font-size: 14;
+	font-size: 14px;
 	height: 660px;
 }
 li.ZeneLista a:link
@@ -265,18 +246,19 @@ ul.ZeneOdjeca
 {
 	list-style-type: none;
 	margin-left: 0.3cm;
+	margin-top: 2cm;
 }
 
 #NaslovZene
 {
-	font-size: 16;
+	font-size: 16px;
 }
 .ZeneSlikaNaslovna
 {
 	width: 920px;
 	height:  660px;
 	margin-left: 6.5cm;
-	margin-top: -8cm;
+	margin-top: -9cm;
 }
 #Tabela 
 {
@@ -284,10 +266,9 @@ ul.ZeneOdjeca
 	margin-left: 1.2cm;
 	color: white;
 	margin-right: 1.2cm;
-	/*padding: 0cm;*/
 	margin-top: -0.42cm;
 	padding-top: 2cm;
-	font-size: 14;
+	font-size: 14px;
 	height: 600px;
 }
 
@@ -297,12 +278,10 @@ table.TabelaDizajn
 	margin-left: 7cm;
 }
 
-
  table.TabelaDizajn, th
  {
- font-size: 14;
+ font-size: 14px;
  }
-
 
 body{
 	width: 100%;
@@ -319,7 +298,7 @@ td.DesnoPoravnaj
 	background: #001A33;
 	margin-top: -0.42cm;
 	padding-top: 2cm;
-	font-size: 13;
+	font-size: 13px;
 	height: 600px;
   }
 
@@ -333,9 +312,9 @@ td.DesnoPoravnaj
   {
   	border:0.03cm;
 	color: white;
-	height: 1cm;
+	height: 0.4cm;
 	padding: 0.2cm;
-	font-size: 13;
+	font-size: 13px;
   }
 
   #TabelaForme
@@ -364,7 +343,7 @@ td.DesnoPoravnaj
    	margin-right: 1.2cm;
    	margin-left: 1.2cm;
    	color: white;
-   	font-size: 13;
+   	font-size: 13px;
    	margin-top: -0.6cm;
    	margin-bottom: 1cm;
    }
@@ -373,7 +352,7 @@ td.DesnoPoravnaj
    	width: 80px;
    	height: 30px;
     position: absolute;
-    top: -1 cm;
+    top: -1cm;
     left: 32.3cm;
     right: 0cm;
    }
@@ -383,3 +362,65 @@ td.DesnoPoravnaj
    	height:30px;
    	margin-left: -1cm;
    }
+   a.OvdjeLink:link
+   {
+   	text-decoration: none;
+   }
+   a.OvdjeLink:visited
+   {
+   	color: red;
+   	text-decoration: none;
+   }
+   #MuskarciOdjel
+   {
+   	background-color:#001A33 ;
+	margin-left: 1.2cm;
+	color: white;
+	margin-right: 1.2cm;
+	margin-top: -0.42cm;
+	padding-top: 2cm;
+	font-size: 14px;
+	height: 660px;
+   }
+
+   li.MuskarciLista a:link
+{
+	text-decoration: none;
+}
+li.MuskarciLista a:visited
+{
+	text-decoration: none;
+	color: white;
+}
+li.MuskarciLista
+{
+	padding-bottom: 0.2cm;
+}
+
+ul.MuskarciOdjeca
+{
+	list-style-type: none;
+	margin-left: 0.3cm;
+	margin-top: 2cm;
+}
+.SlikaMuskaracNaslovna
+{
+	width: 460px;
+	height:  600px;
+	margin-left: 13.5cm;
+	margin-top: -17cm;
+}
+#NovostiZene
+{
+	margin-top: -1.2cm;
+	padding-bottom: 0.5cm;
+	margin-left: 17cm;
+	font-size: 16px;
+}
+#NovostiMuskarci
+{
+margin-top: -1.2cm;
+	padding-bottom: 0.5cm;
+	margin-left: 17cm;
+	font-size: 16px;	
+}
