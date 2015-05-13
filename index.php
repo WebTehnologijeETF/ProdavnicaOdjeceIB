@@ -28,59 +28,16 @@
 	<li id="Administrator" class="Zajednicko"><a class="MenuLink" href="#" onclick="loadXMLDoc6()">Administrator</a></li>
 </ul>
 </div>
-
 <div id="Stranica">
 <div id="GlavniDio">
-
+<?php
+include "FunkcijeNovosti.php";
+?>
 	<div id="Novosti">
-
-		<div id="Novost1" class="OkvirNovosti">
-		<p class="NovostiSlika"><img  alt="" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-7/24/Bell-icon.png"></p>
-		<p class="datum">21.03.2015. 11:30</p>
-		<p class="NaslovNovosti"><b> Nova kolekcija </b></p>
-	<p class="TekstNovosti"> Poštovani kupci, u našu prodavnicu je stigla kolekcija proljeće/ljeto, također...</p>
-	<p class="LinkNovosti"><a href="novost1.html">Detaljnije</a></p>
-	<p class="autor1"> Autor:Ilvana Brankovic </p>
-	</div>
-
-	<div id="Novost2" class="OkvirNovosti">
-		<p class="NovostiSlika"><img alt="" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-7/24/Bell-icon.png"></p>
-		<p class="datum">7.03.2015. 14:30</p>
-		<p class="NaslovNovosti"><b>Praznično sniženje </b></p>
-	<p class="TekstNovosti"> Poštovani kupci, u toku sniženje na svu žensku odjeću, povodom predstojećeg praznika...</p>
-	<p class="LinkNovosti"><a href="novost1.html">Detaljnije</a></p>
-	<p class="autor1"> Autor:Ilvana Brankovic </p>
-	</div>
-
-	<div id="Novost3" class="OkvirNovosti">
-		<p class="NovostiSlika"><img alt="" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-7/24/Bell-icon.png"></p>
-		<p class="datum">22.02.2015. 16:30</p>
-		<p class="NaslovNovosti"><b>Zimsko sniženje </b></p>
-	<p class="TekstNovosti"> Poštovani kupci, u toku sniženje na zimsku kolekciju. Sva odjeća iz te kolekcije je snižena od 30% do...</p>
-	<p class="LinkNovosti"><a href="novost1.html">Detaljnije</a></p>
-	<p class="autor1"> Autor:Ilvana Brankovic </p>
-	</div>
-
-	<div id="Novost4" class="OkvirNovosti">
-		<p class="NovostiSlika"><img alt="" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-7/24/Bell-icon.png"></p>
-		<p class="datum">22.12.2014. 16:30</p>
-
-		<p class="NaslovNovosti"><b>Božićno sniženje </b></p>
-	<p class="TekstNovosti"> Poštovani kupci, u toku sniženje na svu odjeću iz zimske kolekcije. Naglašavamo da sniženje traje...</p>
-	<p class="LinkNovosti"><a href="novost1.html">Detaljnije</a></p>
-	<p class="autor1"> Autor:Ilvana Brankovic </p>
-	</div>
-
-	<div id="Novost5" class="OkvirNovosti">
-		<p class="NovostiSlika"><img alt="" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-7/24/Bell-icon.png"></p>
-		<p class="datum">22.11.2014. 12:30</p>
-		<p class="NaslovNovosti"><b>Oglas</b></p>
-	<p class="TekstNovosti"> U našoj prodavnici odjeće potrebna je radnica,zainteresovani se mogu prijaviti na.......</p>
-	<p class="LinkNovosti"><a href="novost1.html">Detaljnije</a></p>
-	<p class="autor1"> Autor:Ilvana Brankovic </p>
-	</div>
-
-	</div>
+     <?php
+     include "DodavanjeNovosti.php";
+     ?>
+ </div>
 
 	</div>
      <div id="ONamaDio">

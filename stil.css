@@ -226,6 +226,12 @@ img.Cikci
 p.NovostiSlika
 {
 	text-align: right;
+
+}
+.SlikaNovosti
+{
+	width: 20px;
+	height: 20px;
 }
 #ZeneOdjel
 {
@@ -714,4 +720,27 @@ margin-left: 3cm;
 {
 	width: 80px;
 	height: 80px;
+}
+#Ispravno
+{
+	background-color:#001A33 ;
+	margin-left: 1.2cm;
+	color: white;
+	margin-right: 1.2cm;
+	margin-top: -0.42cm;
+	padding-top: 3cm;
+	font-size: 14px;
+	height: 1600px;
+}
+.IspravnoNaslov
+{
+  margin-left: 10cm;
+}
+.IspravnoOstalo
+{
+   margin-left:14cm;
+}
+#IspravnoSalji
+{
+	margin-left: 20cm;
 }
