@@ -14,8 +14,8 @@ ini_set('sendmail_from', 'ibrankovic1@etf.unsa.ba');
  $tema='Žalba/Pohvala web stranice ProdavnicaOdjeceIB';
  $poruka="Lijep dan";
 
- mail($primaoc,$tema,$poruka,'From:ibrankovic1@etf.unsa.ba'.'\r\n'.'CC:ibrankovic1@etf.unsa.ba');
- //mail($primaoc,$tema,$poruka,$dodatneopcije);
+ //mail($primaoc,$tema,$poruka,'From:ibrankovic1@etf.unsa.ba'.'\r\n'.'CC:ibrankovic1@etf.unsa.ba');
+ mail($primaoc,$tema,$poruka,$dodatneopcije);
 
  echo "Zahvaljujemo što nas kontaktirali.";
 
