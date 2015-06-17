@@ -13,7 +13,7 @@ session_start();
 	<tr><td class="NemaBoje4">Korisničko ime:</td><td class="NemaBoje4"><input type="Text"  name="korisnickoime"> </td><td class="NemaBoje4" id="GreskaKorisnickoIme" >Morate unijeti korisničko ime!</td></tr>
 	<tr><td class="NemaBoje4">Password:</td><td class="NemaBoje4"><input type="Text" name="password"> </td ><td class="NemaBoje4" id="GreskaPassword">Morate unijeti password!</td></tr>
 	<tr><td class="NemaBoje4">Email:</td><td class="NemaBoje4"><input type="email"  name="email"> </td ><td class="NemaBoje4" id="GreskaEmail">Morate unijeti Vaš email!</td></tr>
-	<tr><td>Tip korisnika:</td><td><input type="radio" name="tip" value="obicni">Obični<br><input type="radio" name="tip" value="admin">Administrator</td></tr>
+	<tr><td>Tip korisnika:</td><td><input type="radio" name="tip" value="obicni">Obični<br><input type="radio" name="tip" value="admin">Administrator</td><td class="NemaBoje4" id="GreskaTip">Morate izabrati tip korisnika!</td></tr>
 		<tr><td class="NemaBoje4"></td><td class="NemaBoje4" id="Poravnaj1"><input type="submit" value="Dodaj korisnika"></td></tr>
 </table>
 </form>

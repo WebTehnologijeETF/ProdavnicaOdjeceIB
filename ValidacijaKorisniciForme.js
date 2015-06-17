@@ -21,6 +21,7 @@ function ValidirajDodavanjeKorisnika()
 	var ispravno1=true;
 	var ispravno2=true;
 	var ispravno3=true;
+  var ispravno4=true;
 
 	if(document.DodavanjeKorisnika.korisnickoime.value=="")
 	{
@@ -54,7 +55,18 @@ function ValidirajDodavanjeKorisnika()
    	ispravno3=true;
    }
 
-   if(ispravno3==true && ispravno2==true && ispravno1==true)
+   if(document.DodavanjeKorisnika.tip[0].checked==false && document.DodavanjeKorisnika.tip[1].checked==false)
+   {
+    document.getElementById("GreskaTip").style.display="block";
+    ispravno4=false;
+   }
+   else
+   {
+    document.getElementById("GreskaTip").style.display="none";
+    ispravno4=true;
+   }
+
+   if(ispravno3==true && ispravno2==true && ispravno1==true && ispravno4==true)
    {
    	return true;
    }

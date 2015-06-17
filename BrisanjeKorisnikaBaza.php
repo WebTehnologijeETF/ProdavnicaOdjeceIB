@@ -9,39 +9,18 @@
 
 <script src="ZeneStablo.js"></script>
 <script src="DodavanjeProizvodaAjax.js"></script>
-
 <script src="BrisanjeProizvodAjax.js" ></script>
+<script src="ResetButton.js"></script>
 <script src="IzmjenaProizvodaAjax.js" ></script>
 <script src="MuskarciStablo.js" ></script>
 <script src="ValidacijaKontaktForme.js"></script>
 <script src="Ajax.js"></script>
 <script src="PrikaziProizvodeAjax.js"></script>
-
-<script type="text/javascript">
-    setInterval(function(){ 
-  var xmlhttp;
-if (window.XMLHttpRequest)
-  {// code for IE7+, Firefox, Chrome, Opera, Safari
-  xmlhttp=new XMLHttpRequest();
-  }
-else
-  {// code for IE6, IE5
-  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-  }
-xmlhttp.onreadystatechange=function()
-  {
-  if (xmlhttp.readyState==4 && xmlhttp.status==200)
-    {
-    document.getElementById("Novosti").innerHTML=xmlhttp.responseText;
-    }
-  }
-xmlhttp.open("GET","DodavanjeNovosti.php",true);
-xmlhttp.send();
-     }, 3660);
-
-</script>
-<script src="ResetButton.js"></script>
+<script src="ValidacijaKorisniciForme.js"></script>
+<script src="ValidacijaBrisanjaKomentara.js"></script>
+<script src="ValidacijaNovosti.js"></script>
 </head>
+
 <body >
 <div id="Traka">
 <ul>
@@ -54,14 +33,35 @@ xmlhttp.send();
 	<li id="Administrator" class="Zajednicko"><a class="MenuLink" href="#" onclick="loadXMLDoc6()">Administrator</a></li>
 </ul>
 </div>
+
 <?php
-   include "validacija.php"
+session_start();
 ?>
 <div id="Stranica">
-	<?php 
-	include $prikazi;
-	?>
-</div>
+<?php
+$ime=$_GET['korisnickoime'];
+
+
+$veza = new PDO("mysql:dbname=prodavnicaodjeceibbaza;host=localhost;charset=utf8", "ilvana", "ilvana");
+$veza->exec("set names utf8");
+
+if((strcmp($_SESSION['username'], $ime))==0)
+{
+
+}
+else
+{
+	if($ime!="Anoniman")
+	{
+$brisi=$veza->prepare("DELETE FROM korisnik where korisnickoime=:ime");
+$brisi->bindParam(":ime",$ime);
+$brisi->execute();
+}
+}
+
+include "OperacijeKorisnici.php";
+?>
+
 </div>
 </body>
 </html>

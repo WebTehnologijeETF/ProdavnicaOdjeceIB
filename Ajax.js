@@ -575,6 +575,7 @@ xmlhttp.onreadystatechange=function()
     {
     document.getElementById("Stranica").innerHTML=xmlhttp.responseText;
     document.getElementById("GreskaKorisnickoIme").style.display="none";
+    document.getElementById("GreskaTip").style.display="none";
     document.getElementById("GreskaEmail").style.display="none";
     document.getElementById("GreskaPassword").style.display="none";
     }

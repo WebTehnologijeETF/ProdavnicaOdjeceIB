@@ -6,6 +6,7 @@
 <title>I&amp;&Beta;</title>
 
 <link rel="stylesheet" type="text/css" href="stil.css">
+<link rel="shortcut icon" href="http://www.clker.com/cliparts/3/z/E/1/d/Q/blue-circle-flame-md.png">
 
 <script src="ZeneStablo.js"></script>
 <script src="DodavanjeProizvodaAjax.js"></script>

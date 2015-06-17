@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 
 <!DOCTYPE html>
 <html>
@@ -17,29 +20,6 @@
 <script src="ValidacijaKontaktForme.js"></script>
 <script src="Ajax.js"></script>
 <script src="PrikaziProizvodeAjax.js"></script>
-<script type="text/javascript">
-    setInterval(function(){ 
-  var xmlhttp;
-if (window.XMLHttpRequest)
-  {// code for IE7+, Firefox, Chrome, Opera, Safari
-  xmlhttp=new XMLHttpRequest();
-  }
-else
-  {// code for IE6, IE5
-  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-  }
-xmlhttp.onreadystatechange=function()
-  {
-  if (xmlhttp.readyState==4 && xmlhttp.status==200)
-    {
-    document.getElementById("Novosti").innerHTML=xmlhttp.responseText;
-    }
-  }
-xmlhttp.open("GET","DodavanjeNovosti.php",true);
-xmlhttp.send();
-     }, 3660);
-
-</script>
 <script src="ValidacijaKorisniciForme.js"></script>
 <script src="ValidacijaBrisanjaKomentara.js"></script>
 <script src="ValidacijaNovosti.js"></script>
@@ -59,57 +39,17 @@ xmlhttp.send();
 </div>
 
 <div id="Stranica">
-<?php 
+    
 
-$novokorisnickoime=$_GET['korisnickoime'];
-$novimail="";
-$novipassword="";
-$nemaid=0;
-$novitip="";
+<?php
+$id1=$_GET['id1'];
+
 $veza = new PDO("mysql:dbname=prodavnicaodjeceibbaza;host=localhost;charset=utf8", "ilvana", "ilvana");
 $veza->exec("set names utf8");
-$svikorisnici=$veza->query("SELECT korisnickoime,email,sifra,tip FROM korisnik");
-foreach ($svikorisnici as $key ) {
-	if(strcmp($novokorisnickoime,$key['korisnickoime'])==0)
-	{
-    echo "podudud";
-		$novimail=$key['email'];
-		$novipassword=$key['sifra'];
-    $novitip=$key['tip'];
-	}
-}
-if($_GET['korisnickoime']=="")
-{
-	$nemaid=1;
-}
-
-if($_GET['email']!="")
-	$novimail=$_GET['email'];
-
-if($_GET['password']!="")
-	$novipassword=$_GET['password'];
-
-if(isset($_GET['tip']))
-{
-  echo "¸1111";
-  if($_GET['tip']=="obicni")
-    $novitip="obicni";
-  else
-    $novitip="admin";
-}
-
-if($nemaid==0)
-{
-  echo "string";
-$mijenjaj=$veza->prepare("UPDATE korisnik SET email=:email, sifra=:sifra, tip=:tip WHERE korisnickoime=:korisnickoime");
-$mijenjaj->bindParam(":email",$novimail);
-$hash=md5($novipassword);
-$mijenjaj->bindParam(":sifra",$hash);
-$mijenjaj->bindParam(":tip",$novitip);
-$mijenjaj->bindParam(":korisnickoime",$novokorisnickoime);
-$mijenjaj->execute();
-}
-include "OperacijeKorisnici.php";
+$brisi=$veza->prepare("DELETE FROM komentar where id=:id");
+$brisi->bindParam(":id",$id1);
+$brisi->execute();
+include "AdminPanel.html";
 ?>
 </div>
 </body>

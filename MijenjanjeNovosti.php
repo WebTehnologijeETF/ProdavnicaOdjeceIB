@@ -16,7 +16,7 @@ session_start();
 	<tr><td class="NemaBoje4">Slika:</td><td class="NemaBoje4"><input type="Text" id="SlikaNovostiDodavanje" name="slika"> </td><td class="NemaBoje4"></td></tr>
 	<tr><td class="NemaBoje4">Sažetak:</td><td class="NemaBoje4"><input type="Text" id="SazetakNovostiDodavanje" name="sazetak"> </td><td class="NemaBoje4"></td></tr>
 	<tr><td class="NemaBoje4">Tekst novosti:</td><td class="NemaBoje4"><input type="Text" id="TekstNovostiDodavanje" name="tekst"> </td><td class="NemaBoje4"></td></tr>
-	<tr><td class="NemaBoje4"></td><td class="NemaBoje4" id="Poravnaj1"><input type="submit" value="Dodaj novost"></td></tr>
+	<tr><td class="NemaBoje4"></td><td class="NemaBoje4" id="Poravnaj1"><input type="submit" value="Promijeni novost"></td></tr>
 </table>
 </form>
 

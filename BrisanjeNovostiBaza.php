@@ -17,6 +17,8 @@
 <script src="Ajax.js"></script>
 <script src="PrikaziProizvodeAjax.js"></script>
 <script src="ValidacijaKorisniciForme.js"></script>
+<script src="ValidacijaBrisanjaKomentara.js"></script>
+<script src="ValidacijaNovosti.js"></script>
 <script type="text/javascript">
     setInterval(function(){ 
   var xmlhttp;
@@ -40,29 +42,31 @@ xmlhttp.send();
      }, 3660);
 
 </script>
-<script src="ValidacijaBrisanjaKomentara.js"></script>
-<script src="ValidacijaNovosti.js"></script>
 </head>
 
 <body >
 <div id="Traka">
 <ul>
-  <li id="Inicijali" class="Zajednicko">I&amp;&Beta;</li>
-  <li id="Informacije" class="Zajednicko"> <a class="MenuLink" href="#" onclick="loadXMLDoc3()">O nama</a></li>
-  <li id="Zene" class="Zajednicko"><a class="MenuLink"  href="#" onclick="loadXMLDoc()">Žene</a></li>
-  <li id="Muskarci" class="Zajednicko"><a class="MenuLink" href="#" onclick="loadXMLDoc1()">Muškarci</a></li>
-  <li id="Kontakt" class="Zajednicko"><a class="MenuLink" href="#" onclick="loadXMLDoc4()">Kontakt</a></li>
-  <li id="Dobavljaci" class="Zajednicko"><a class="MenuLink"  href="#" onclick="loadXMLDoc2()">Dobavljači</a></li>
-  <li id="Administrator" class="Zajednicko"><a class="MenuLink" href="#" onclick="loadXMLDoc6()">Administrator</a></li>
+    <li id="Inicijali" class="Zajednicko">I&amp;&Beta;</li>
+    <li id="Informacije" class="Zajednicko"> <a class="MenuLink" href="#" onclick="loadXMLDoc3()">O nama</a></li>
+    <li id="Zene" class="Zajednicko"><a class="MenuLink"  href="#" onclick="loadXMLDoc()">Žene</a></li>
+    <li id="Muskarci" class="Zajednicko"><a class="MenuLink" href="#" onclick="loadXMLDoc1()">Muškarci</a></li>
+    <li id="Kontakt" class="Zajednicko"><a class="MenuLink" href="#" onclick="loadXMLDoc4()">Kontakt</a></li>
+    <li id="Dobavljaci" class="Zajednicko"><a class="MenuLink"  href="#" onclick="loadXMLDoc2()">Dobavljači</a></li>
+    <li id="Administrator" class="Zajednicko"><a class="MenuLink" href="#" onclick="loadXMLDoc6()">Administrator</a></li>
 </ul>
 </div>
 
 <div id="Stranica">
-<?php
-session_start();
-session_unset();
-include "Administrator.html";
-?>
-</div>
+  <?php
+  $id1=$_GET['id1'];
+$veza = new PDO("mysql:dbname=prodavnicaodjeceibbaza;host=localhost;charset=utf8", "ilvana", "ilvana");
+$veza->exec("set names utf8");
+$brisi=$veza->prepare("DELETE FROM novost where id=:id");
+$brisi->bindParam(":id",$id1);
+$brisi->execute();
+include "OperacijeNovosti.php"; 
+  ?>
+  </div>
 </body>
 </html>

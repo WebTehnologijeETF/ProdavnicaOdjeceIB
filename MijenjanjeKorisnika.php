@@ -24,7 +24,7 @@ session_start();
      $veza->exec("set names utf8");
      $mijenjaj=$veza->query("SELECT korisnickoime,email,sifra,tip FROM korisnik");
      echo '<table id="TabelaKorisniciBrisanje">';
-      echo "<tr><td>Korisnicko ime</td><td>Email</td><td>Šifra</td></tr>";
+      echo "<tr><td>Korisnicko ime</td><td>Email</td><td>Šifra</td><td>Tip</td></tr>";
      foreach ($mijenjaj as $key) {
      	echo '<tr>'.'<td>'.$key['korisnickoime'].'</td><td>'.$key['email'].'</td><td>'.$key['sifra'].'</td><td>'.$key['tip'].'</td></tr>';
      }

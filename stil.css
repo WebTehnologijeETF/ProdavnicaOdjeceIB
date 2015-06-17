@@ -298,8 +298,7 @@ ul.ZeneOdjeca
 table.TabelaDizajn
 {
 	border-collapse: collapse;
-	margin-left: 5cm;
-	margin-right: 5cm;
+	margin-left: 7cm;
 }
 
  table.TabelaDizajn, th
@@ -441,14 +440,14 @@ ul.MuskarciOdjeca
 
 .SlikaMuskaracNaslovna
 {
-	width: 460px;
-	height:  600px;
+	width: 800px;
+	height:  660px;
 	margin-left: 2cm;
 	
 }
 #Slicica1{
 	margin-top: -119.5cm;
-	margin-left: 12cm;
+	margin-left: 8.5cm;
 }
 
 #NovostiZene
@@ -459,11 +458,15 @@ ul.MuskarciOdjeca
 	font-size: 16px;
 	color: white;
 }
+#PoravnajKontakt
+{
+	text-align: left;
+}
 #NovostiMuskarci
 {
     margin-top: -1cm;
 	padding-bottom: 0.5cm;
-	margin-left: 7cm;
+	margin-left: 11cm;
 	font-size: 16px;	
 	color: white;
 }
@@ -640,6 +643,7 @@ background-color:#001A33 ;
 #TabelaAdmina
 {
 	margin-left: 9cm;
+	margin-top:1cm;
 
 }
 #TabelaAdmina,td.SmanjiAdmin
@@ -649,14 +653,14 @@ background-color:#001A33 ;
 
 #TabelaAdmina1
 {
-	margin-left: 15.5cm;
+	margin-left: 17.5cm;
 	margin-right: 1.2cm;
 	padding-top: 0.1cm;
 }
 #TabelaAdmina1,td.SmanjiAdmin
 {
 	color: white;
-	padding-left: 0.2cm;
+	
 }
 #TabelaAdmina,td.SmanjiAdmin
 {
@@ -994,7 +998,7 @@ a.KomentarMail1:visited
 {
 	text-align: center;
 	font-size: 24px;
-	margin-top: -2cm;
+	margin-top: -4cm;
 }
 .SlikaKomentar1
 {
@@ -1073,7 +1077,7 @@ a.KomentarMail1:visited
 }
 #TabelaNovostiModifikacija
 {
-  margin-left:7.5cm;
+  margin-left:8.5cm;
 }
 
 #TabelaKorisniciBrisanje,td
@@ -1088,7 +1092,7 @@ a.KomentarMail1:visited
 
 #TabelaKorisniciBrisanje
 {
-    margin-left: 4.5cm;
+    margin-left: 2.0cm;
     width: 350px;
 }
 #TabelaKomentaraBrisanje,td
@@ -1103,7 +1107,7 @@ a.KomentarMail1:visited
 
 #TabelaKomentaraBrisanje
 {
-	margin-left: 9cm;
+	margin-left: 11.5cm;
 	width: 450px;
 }
 
@@ -1124,7 +1128,7 @@ a.KomentarMail1:visited
 {
 	text-align: center;
 	font-size: 30px;
-	margin-top: -2cm;
+	margin-top: -1cm;
 	text-decoration: blink;
 }
 

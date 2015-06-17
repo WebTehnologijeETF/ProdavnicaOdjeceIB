@@ -117,9 +117,9 @@ include "FunkcijaIspisSlike.php"
      </td>
 		</tr>
 		<tr>
+			<td  class="NemaBoje" id="Button"></td>
+			<td class="NemaBoje" id="PoravnajKontakt"><input type="Button"  value="Reset" onclick="IzbrisiSve()" class="RasiriButton"/>&nbsp &nbsp<input type="submit"  value="Pošalji" class="RasiriButton"/></td>
 			<td class="NemaBoje"></td>
-			<td  class="NemaBoje" id="Button"><input type="submit"  value="Pošalji" class="RasiriButton"/></td>
-			<td class="NemaBoje"><input type="Button"  value="Reset" onclick="IzbrisiSve()" class="RasiriButton"/></td>
 		</tr>
 	</table>
 	

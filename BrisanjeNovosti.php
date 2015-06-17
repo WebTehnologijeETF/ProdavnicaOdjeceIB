@@ -9,7 +9,7 @@ session_start();
         echo $a;?>  <input type="submit"  id="OdjavaDugme" value="Odjava"></p>
 </form>
 	<p id="DodavanjeProizvodaDioPoruka">Unesite id novosti, koju želite brisati:</p>
-	<form id="FormaProizvodi" action="BrisanjeNovostiRest.php" method="get" onsubmit="return BrisanjeNovostiValidacija(); return false;" name="BrisanjeNovostiForma">
+	<form id="FormaProizvodi" action="BrisanjeNovostiBaza.php" method="get" onsubmit="return BrisanjeNovostiValidacija(); return false;" name="BrisanjeNovostiForma">
 <table id="TabelaProizvoda">
 	<tr><td class="NemaBoje4">ID novosti:</td><td class="NemaBoje4"><input type="Text" id="NaslovNovostiDodavanje" name="id1"> </td><td class="NemaBoje4" id="GreskaIdNovost">Morate unijeti id novosti.</td></tr>
 	<tr><td class="NemaBoje4"></td><td class="NemaBoje4" id="Poravnaj1"><input type="submit" value="Briši novost"></td></tr>
